@@ -5,7 +5,9 @@ function somar() {
     const numero2 = document.getElementById('segundoNumero').value
     const resultado = document.getElementById('resultado')
 
-    const somaTotal = numero1 + ' + ' + numero2 + ' = ' + (parseFloat(numero1) + parseFloat(numero2))
+    // const somaTotal = numero1 + ' + ' + numero2 + ' = ' + (parseFloat(numero1) + parseFloat(numero2))
+    const somaTotal = `${numero1} + ${numero2} = ${parseFloat(numero1) + parseFloat(numero2)}`
+
     resultado.textContent = somaTotal
 }
 
@@ -16,7 +18,7 @@ function subtrair() {
     const numero2 = document.getElementById('segundoNumero').value
     const resultado = document.getElementById('resultado')
 
-    const somaTotal = numero1 + ' - ' + numero2 + ' = ' + (parseFloat(numero1) - parseFloat(numero2))
+    const somaTotal = `${numero1} - ${numero2} = ${parseFloat(numero1) - parseFloat(numero2)}`
     resultado.textContent = somaTotal
 }
 
@@ -27,7 +29,7 @@ function multiplicar() {
     const numero2 = document.getElementById('segundoNumero').value
     const resultado = document.getElementById('resultado')
 
-    const somaTotal = numero1 + ' × ' + numero2 + ' = ' + (parseFloat(numero1) * parseFloat(numero2))
+    const somaTotal = `${numero1} × ${numero2} = ${parseFloat(numero1) * parseFloat(numero2)}`
     resultado.textContent = somaTotal
 }
 
@@ -38,7 +40,7 @@ function dividir() {
     const numero2 = document.getElementById('segundoNumero').value
     const resultado = document.getElementById('resultado')
 
-    const somaTotal = numero1 + ' ÷ ' + numero2 + ' = ' + (parseFloat(numero1) / parseFloat(numero2))
+    const somaTotal = `${numero1} ÷ ${numero2} = ${parseFloat(numero1) / parseFloat(numero2)}`
     resultado.textContent = somaTotal
 }
 
